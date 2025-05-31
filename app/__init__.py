@@ -18,6 +18,6 @@ def create_app(test_config=None):
     from .main import main as main_blueprint
     app.register_blueprint(auth_blueprint)
     app.register_blueprint(main_blueprint)
-    from .db import init_app
+    from .models.db import init_app
     init_app(app)
     return app
