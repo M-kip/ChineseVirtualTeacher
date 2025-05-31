@@ -12,7 +12,7 @@ Capabilities
 - Create study plan for student according to hsk level
 
 ## PROJECT STRUCTURE
-your_project/
+```your_project/
 ├── app/
 │   ├── __init__.py
 │   ├── routes/
@@ -34,4 +34,4 @@ your_project/
 ├── .env
 ├── requirements.txt
 ├── run.py
-└── README.md
+└── README.md```
