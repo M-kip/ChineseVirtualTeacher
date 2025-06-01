@@ -11,6 +11,33 @@ Capabilities
 - Generate sample questions,
 - Create study plan for student according to hsk level
 
+## Installation
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/M-kip/ChineseVirtualTeacher
+   cd ChineseVirtualTeacher
+   ```
+
+2. Create a virtual environment and install dependencies:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
+3. Set up your MongoDB connection in the settings file
+
+4. Initialize the database:
+   ```
+   flask --app run init-db
+   ```
+
+7. Run the development server:
+   ```
+   flask --app run run --debug
+   ```
+
 ## PROJECT STRUCTURE
 ```your_project/
 ├── app/
@@ -31,7 +58,14 @@ Capabilities
 ├── migrations/
 ├── tests/
 │   └── test_basic.py
+├── models/
+│   ├── __init__.py
+│   └──db.py
+│   └──load_docs.py
+│   └──vector_search.py
 ├── .env
 ├── requirements.txt
 ├── run.py
 └── README.md```
+
+
