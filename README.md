@@ -1,11 +1,15 @@
-# ChineseVirtualTeacher
+# Chinese Virtual Teacher
 Virtual assistant with RAG capabilities to help chinese students learn more efficiently. The system grounds itself with HSK1-3 textbook content when setting questions, presenting examples with the same flavour and level of difficulty as the HSK textbook.
-The project makes use of the following technologies
+
+
+**The project makes use of the following technologies**
 - flask framework
 - mongodb database
 - google genai
-- 
-Capabilities
+- all-MiniLM-L6-v2 model
+
+
+## Capabilities
 - vector search
 - AI recommendations
 - Generate sample questions,
@@ -26,14 +30,12 @@ Capabilities
    pip install -r requirements.txt
    ```
 
-3. Set up your MongoDB connection in the settings file
-
-4. Initialize the database:
+3. Initialize the database:
    ```
    flask --app run init-db
    ```
 
-7. Run the development server:
+4. Run the development server:
    ```
    flask --app run run --debug
    ```
@@ -66,7 +68,8 @@ Capabilities
 ├── .env
 ├── requirements.txt
 ├── run.py
-└── README.md```
+└── README.md
+```
 
 ## License
 
