@@ -68,4 +68,18 @@ Capabilities
 ├── run.py
 └── README.md```
 
+## License
 
+MIT License. See LICENSE file for details.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## Credits
+
+Built with:
+- Django
+- MongoDB Database
+- Google generativeAI
+- sentence-transformers/all-MiniLM-L6-v2
