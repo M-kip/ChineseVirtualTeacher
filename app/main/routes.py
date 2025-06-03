@@ -25,7 +25,7 @@ def vector_search():
     return render_template('main/vector_search.html', time=current_time)
 
 @main.route('/ai_recommendations', methods=['GET', 'POST'])
-def AI_recommedations():
+def ai_recommendations():
     query_text = request.args.get('query_txt', '')
     if request.method == 'GET' and query_text:
         # If GET request with query_txt, perform AI recommendations
