@@ -26,6 +26,7 @@ def vector_search():
 
 @main.route('/ai_recommendations', methods=['GET', 'POST'])
 def ai_recommendations():
+    response = []
     query_text = request.args.get('query_txt', '')
     if request.method == 'GET' and query_text:
         # If GET request with query_txt, perform AI recommendations
@@ -35,8 +36,10 @@ def ai_recommendations():
         from app.models import generate_response, perform_vector_search
         results = perform_vector_search(query_text, limit, num_candidates)
         ai_results = generate_response(query_text, results)
-        print(f"Recommendations results: {ai_results}")
+        #print(f"Recommendations results: {ai_results}")
         # Render the AI recommendations results
+        response.append(ai_results)
+        suggestions = response if response else []
 
-        return render_template('main/AI_recommendations.html', results=ai_results, query=query_text, time=current_time)
+        return render_template('main/AI_recommendations.html', suggestions=suggestions, query=query_text, time=current_time)
     return render_template('main/AI_recommendations.html', time=current_time)
