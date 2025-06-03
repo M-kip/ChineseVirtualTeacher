@@ -172,4 +172,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# Local configuration file for Python projects
+# This file is used to store local configuration settings for Python projects.
 books/
