@@ -39,6 +39,10 @@ Virtual assistant with RAG capabilities to help chinese students learn more effi
    ```
    flask --app run run --debug
    ```
+## UI in Action
+![AI traslations, exaplanation, and examples ](./books/ui%20in%20action%201.png)
+![Alt text](./books/ui%20in%20action%201.png)
+
 
 ## PROJECT STRUCTURE
 ```your_project/
